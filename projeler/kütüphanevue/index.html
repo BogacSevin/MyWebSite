@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kütüphane</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href=""></a>
+          </div>
+
+          <ul id="login" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row" v-if="!isShownDetails">
+        <div class="col-md-4" v-for="(kitap , index) in kitaplar">
+          <div class="card">
+            <img
+              :src="kitap.img"
+              class="card-img-top"
+              width="300px"
+              height="400px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{kitap.name}}</h5>
+              <p v-if="kitap.detay == true">{{kitap.contents}}</p>
+              <a class="btn btn-primary" @click="detayAc(kitap)"
+                >Ayrıntılı Bilgi</a
+              >
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-else-if="isShownDetails">
+        <div
+          id="sonuc"
+          style="
+            overflow: hidden;
+            border: 1px solid #ddd;
+            background: #b0c4de;
+            margin-left: 250px;
+            padding: 5px;
+            width: 700px;
+            height: 400px;
+          "
+        >
+          <a class="btn btn-primary" @click="detayAc(kitap)">{{secili.name}}</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          kitaplar: [],
+          isShownDetails: true,
+          secili: {},
+        },
+        mounted() {
+          this.ara();
+          this.detayAc();
+        },
+        methods: {
+          ara() {
+            fetch("satranc.json")
+              .then((res) => res.json())
+              .then((res) => {
+                this.kitaplar = res.kitaplar;
+                console.log(res);
+                this.kitaplar.forEach((element, index) => {
+                  element.detay = false;
+                });
+              });
+          },
+          detayAc(data) {
+            this.isShownDetails = !this.isShownDetails;
+            this.secili = data;
+            this.secili = Object.assign({}, this.secili);
+            console.log(this.secili);
+            /*this.kitaplar[data].detay = !this.kitaplar[data].detay;
+            this.kitaplar = Object.assign({}, this.kitaplar);
+            sonuc.addEventListener("click", () => {
+              function test() {
+                var secili = document.getElementsByClassName("sonuc");
+                if ((this.isShown = "false")) {
+                } else {
+                  sonuc.style.display = "none";
+                }
+              }
+            });
+            */
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

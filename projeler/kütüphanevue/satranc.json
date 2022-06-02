@@ -1,0 +1,32 @@
+{
+    "kitaplar" : [
+        {
+            "id" : 1,
+            "name" : "Satranc",
+            "writer" : "Stephan Zweig",
+            "page" : "85" ,
+            "img" : "https://2.bp.blogspot.com/-1kPUGKkQcKA/XLeTJGsBKvI/AAAAAAAAC2M/fM87SdsfHEMnqjrs45VYPN2OxIau2i7OACLcBGAs/s320/satranc-stefan-zweig69be861b8d824182f08cc2a31b044889.jpg",
+            "contents" : 
+            "Kitap, iki arkadaşın New York'tan Buenos Aires'e giden bir gemiye binmesiyle başlar. Gemide gazeteciler de vardır çünkü dünya satranç şampiyonu Mirko Czentovic de bir turnuva için Buenos Aires'e gitmektedir. Mirko Czentovic, küçük yaşlarda anlama, konuşma gibi birçok konuda zorluk çekmiş bir köylüdür aslında. Küçüklüğünde rahip olan babası ve arkadaşının her akşam oynadığı üç el satranç müsabakalarını düzenli olarak izleyerek satranç öğrenmiştir. Bir akşam babasının işi çıkıp da arkadaşıyla oynadığı satranç yarım kalınca, Mirko babasının yerine oyuna girerek o eli ve devamındaki iki eli daha kazanır. Babası buna çok şaşırır ve devamında şehirdeki satranç kulübüne giderek yeteneğini herkese gösterirler. Böylece büyük bir şöhrete ulaşan Mirko Czentovic, en sonunda da dünya şampiyonu olarak şöhretini zirveye ulaştırır. Fakat satranç oyunu bitip de masadan kalkınca, çevresindekilere küçüklüğündeki aptal bakışlarla bakmakta ve gazetecilere saçma ve anlaşılmaz yanıtlar vermektedir. Bu nedenle gazetecilerle veya çevresindeki insanlarla satranç dışında hiç konuşmamaktadır."
+        },
+        {
+            "id" : 2,
+            "name" : "Ay Işığı Sokağı",
+            "writer" : "Stephan Zweig",
+            "page" : "93" ,
+            "img" : "https://i.dr.com.tr/cache/600x600-0/originals/0001705401001-1.jpg ",
+            "contents" : 
+            "Takdir edersiniz ki Zweig, insanların ruh dünyalarını ve duygu durumlarını çok iyi tahlil eden bir yazardır. Ay Işığı Sokağı’nda bulunan beş öyküde de bu tahlillerin örneklerini görebiliyoruz. Karakterler, her insanın içinde bulundurduğu duygu ve dürtülere sahiptir; fakat bu duygu ve dürtüleri bastıramamakta hatta bu duygu ve dürtülerin pençesinde can vermektedir. Karakterler bütün zayıflıklarıyla işlenmiştir. Ay Işığı Sokağı’nda, üstün olma duygusuna yenik düşüp hayatının aşkını kaçıran bir adamdan; Leporella’da, bilinçsizce patronuna bağlanan taşralı kadından; Nişan’da bir adamın hayatta kalma dürtüsü uğruna yaptıklarından; Leman Gölü Kıyısında Olay’da, memleket hasretine dayanamayan bir esirin kendi sonunu hazırlamasından, Avare’de, otorite karşısında direnç gösteren bir gencin hayatına son vermesinden bahsedilmektedir."
+        },
+        {
+
+            "id" : 3,
+            "name" : "Bilinmeyen Bir Kadının Mektubu",
+            "writer" : "Stephan Zweig",
+            "page" : "72" ,
+            "img" : "https://i.dr.com.tr/cache/600x600-0/originals/0000000411059-1.jpg",
+            "contents" : 
+            "Bilinmeyen Bir Kadının Mektubu, tanınmış bir yazar olan R’nin Viyana’ya dönmesiyle başlıyor. R, gezi sonrası eline geçen bir mektubun üzerinde yazan “Beni hiç tanımamış olan sana” hitabı ile başlayan mektubu ilginç bulup okumaya başlıyor ve bu noktadan itibaren hayatına başka bir pencereden bakacağı bir yolculuğa başlıyor."                
+        }
+    ]
+}
